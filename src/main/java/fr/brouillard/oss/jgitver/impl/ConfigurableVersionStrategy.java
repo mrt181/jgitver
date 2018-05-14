@@ -115,7 +115,7 @@ public class ConfigurableVersionStrategy extends VersionStrategy {
                 // we are not on head
                 if (GitUtils.isAnnotated(tagToUse)) {
                     // found tag to use was an annotated one, lets' increment the version automatically
-                    baseVersion = baseVersion.incrementPatch();
+                    baseVersion = baseVersion.incrementMinor();
                 }
             }
             
